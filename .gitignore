@@ -1,0 +1,44 @@
+# Ignore pasta target padrão do Maven (compilados e build)
+target/
+
+# Exceto os targets dentro de src/main e src/test (se tiverem builds específicos)
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Ignore pasta build (geralmente usada por Gradle)
+build/
+
+# Exceto builds específicos dentro de src/main e src/test
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Ignorar wrapper do Maven (binários)
+.mvn/wrapper/maven-wrapper.jar
+
+# Arquivos de configuração e cache do Spring Tools Suite (STS)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA configs e arquivos de projeto
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans configs e builds
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code settings folder
+.vscode/
+
+# Arquivos de log (exemplo extra que pode ser útil)
+*.log
